@@ -4,7 +4,6 @@ jobs:
   build:
     working_directory: ~/python-app
     docker:
-<<<<<<< HEAD
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
@@ -29,7 +28,6 @@ workflows:
   build_and_test:
     jobs:
       - build
-<<<<<<< HEAD
       - test:
           requires:
             - build
