@@ -2,7 +2,7 @@ version: 2.1
 
 jobs:
   build:
-    working_directory: ~/circleci-python
+    working_directory: ~/home/ubuntu/python-app
     docker:
       - image: "circleci/python:3.6.4"
     steps:
@@ -17,7 +17,7 @@ jobs:
       - run: python3 main-test.py
       - image: cimg/python:3.8
 
-    working_directory: ~/python-app
+    working_directory: ~/home/ubuntu/python-app
 
     steps:
       - checkout
