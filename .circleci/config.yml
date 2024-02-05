@@ -5,15 +5,10 @@ jobs:
     docker:
       - image: python:3.8
 
-    working_directory: ~/python-app
+    working_directory: ~/your-python-app
 
     steps:
       - checkout
-
-      - run:
-          name: Install dependencies
-          command: |
-            pip install -r requirements.txt
 
       - run:
           name: Run tests
@@ -30,4 +25,3 @@ workflows:
   build:
     jobs:
       - build
-
